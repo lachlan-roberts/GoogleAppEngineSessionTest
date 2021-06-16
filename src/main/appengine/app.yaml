@@ -1,0 +1,11 @@
+runtime: custom
+env: flex
+
+service: openid-test
+
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+
+automatic_scaling:
+  max_num_instances: 1
